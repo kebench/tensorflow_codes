@@ -1,0 +1,5 @@
+# DON'T TRACK THESE FOLDERS
+.vscode/
+cifar/
+models/
+venv/
