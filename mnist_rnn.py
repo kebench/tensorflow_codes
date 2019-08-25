@@ -1,3 +1,8 @@
+# This code also uses TensorBoard to view the graphs for tf.Variables as well as the flow chart of the Neural Network
+# To run tensorboard: 
+# tensorboard --logdir=rnn_demo:LOG_DIR
+# Where LOG_DIR is the directory where the saved info for tf.Variables are
+
 import tensorflow as tf
 import os
 from tensorflow.examples.tutorials.mnist import input_data
