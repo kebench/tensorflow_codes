@@ -29,7 +29,7 @@ final_output = get_linear_layer(last_rnn_output)
 softmax = tf.nn.softmax_cross_entropy_with_logits(logits = final_output, labels = y)
 cross_entropy = tf.reduce_mean(softmax)
 train_step = tf.train.RMSPropOptimizer(1e-3, 0.9).minimize(cross_entropy)
-
+ 
 correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(final_output, 1))
 accuracy = (tf.reduce_mean(tf.cast(correct_prediction, tf.float32))) * 100
 
