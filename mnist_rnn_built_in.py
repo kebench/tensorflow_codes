@@ -35,7 +35,7 @@ accuracy = (tf.reduce_mean(tf.cast(correct_prediction, tf.float32))) * 100
 
 sess = tf.InteractiveSession()
 sess.run(tf.global_variables_initializer())
-
+ 
 test_data = mnist.test.images[:batch_size].reshape((-1, time_steps, element_size))
 test_label = mnist.test.labels[:batch_size]
 
