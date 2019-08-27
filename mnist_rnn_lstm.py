@@ -1,3 +1,7 @@
+"""
+99% of the code was from the mnist_rnn_built_in.py.
+A few lines were changed so that it will use LSTM instead of Vanilla RNN
+"""
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 
