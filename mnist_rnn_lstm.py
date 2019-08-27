@@ -38,7 +38,7 @@ train_step = tf.train.RMSPropOptimizer(1e-3, 0.9).minimize(cross_entropy)
  
 correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(final_output, 1))
 accuracy = (tf.reduce_mean(tf.cast(correct_prediction, tf.float32))) * 100
-
+ 
 sess = tf.InteractiveSession()
 sess.run(tf.global_variables_initializer())
 
