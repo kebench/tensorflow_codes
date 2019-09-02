@@ -51,6 +51,7 @@ for sentence in sentences:
             word_to_index_map[word] = index
             index += 1
 
+# reverse the mapping of word to index
 index_to_word_map = {index: word for word, index in word_to_index_map.items()}
 vocabulary_size = len(index_to_word_map)
 
