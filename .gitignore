@@ -3,3 +3,4 @@
 cifar/
 models/
 venv/
+logs/
