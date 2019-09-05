@@ -4,3 +4,4 @@ cifar/
 models/
 venv/
 logs/
+glove/
