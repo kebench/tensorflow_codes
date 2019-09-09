@@ -102,12 +102,12 @@ np.random.shuffle(data_indices)
 data = np.array(data)[data_indices]
 labels = np.array(labels)[data_indices]
 seqlens = np.array(seqlens)[data_indices]
-train_x = data[:10000]
-train_y = labels[:10000]
-train_seqlens = seqlens[:10000]
-test_x = data[10000:]
-test_y = labels[10000:]
-test_seqlens = seqlens[10000:]
+train_x = data[:10000] 
+train_y = labels[:10000] 
+train_seqlens = seqlens[:10000] 
+test_x = data[10000:] 
+test_y = labels[10000:] 
+test_seqlens = seqlens[10000:] 
 
 _inputs = tf.placeholder(tf.int32, shape=[BATCH_SIZE, TIME_STEPS])
 embedding_placeholder = tf.placeholder(tf.float32, [vocabulary_size, GLOVE_SIZE])
